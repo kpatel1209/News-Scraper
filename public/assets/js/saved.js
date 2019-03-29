@@ -67,7 +67,7 @@ $(document).ready( () => {
   function renderEmpty() {
     // we don't have any saved articles!
     const emptyAlert = $(
-        `<div class='alert alert-info text-center'>
+        `<div class='alert alert-danger text-center'>
         <h4>Looks like we don't have any saved articles.</h4>
         </div>
         <div class='panel panel-default'>
