@@ -2,7 +2,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const mongoose = require("mongoose");
-// const logger = require("morgan");
+const logger = require("morgan");
 const db = require("./models");
 
 // Set PORT to be either the host's designated port or 8080
@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 
 // Use Morgan logger for logging requests
-// app.use(logger('dev'));
+app.use(logger('dev'));
 
 // Set Handlebars
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
@@ -36,10 +36,10 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoScraper
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to Mongo DB
-mongoose.Promise = Promise;
+// mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
 // Listen on the PORT
-app.listen(PORT, () => {
+app.listen(PORT, function() {
   console.log(`Listening on port: ${PORT}`);
 });
