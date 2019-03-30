@@ -31,8 +31,18 @@ h3 {
   color: white;
 }
 
+.navbar-brand {
+  color: black;
+}
+
+#home,
+#saved {
+  color: black;
+}
+
 .btn-scrape{
   margin-top: 8px;
+  margin-left: 40%;
 }
 
 #strike-through {

@@ -15,9 +15,9 @@
     <!-- Collect the nav links for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="/">Home</a></li>
-        <li><a href="/saved">Saved Articles</a></li>
-        <li><button type="button" class="btn btn-danger btn-scrape">Refresh Articles</button></li>
+        <li><a href="/" id="home">Home</a></li>
+        <li><a href="/saved" id="saved">Saved Articles</a></li>
+        {{!-- <li><button type="button" class="btn btn-danger btn-scrape">Refresh NPR Articles</button></li> --}}
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -25,8 +25,9 @@
 
     <div class="jumbotron npr-bg">
       <div class="container">
-        <h1 class="text-center">Scraping the News</h1>
-        <h3 class="text-center">from NPR</h3>
+        <h1 class="text-center" id="scraping"></h1>
+        <button type="button" class="btn btn-danger btn-scrape center">Refresh NPR Articles</button>
+        {{!-- <h3 class="text-center">from NPR</h3> --}}
       </div>
     </div>
 
@@ -41,6 +42,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script type="text/javascript" src="/assets/js/load.js"></script>
     <script type="text/javascript" src="/assets/js/index.js"></script>
 
 
