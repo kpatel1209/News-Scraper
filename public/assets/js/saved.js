@@ -68,14 +68,11 @@ $(document).ready( () => {
     // we don't have any saved articles!
     const emptyAlert = $(
         `<div class='alert alert-danger text-center'>
-        <h4>You currently do not have any saved articles.</h4>
+          <h4>You currently do not have any saved articles.</h4>
         </div>
         <div class='panel panel-default'>
-        <div class='panel-heading text-center'>
-        <h3>Would You Like To Browse Available Articles?</h3>
-        </div>
-        <div class='panel-body text-center'>
-        <h4><a href='/'>Browse Articles</a></h4>
+          <div class='panel-body text-center'>
+          <h4><a href='/'>Browse Articles</a></h4>
         </div>
         </div>`
     );

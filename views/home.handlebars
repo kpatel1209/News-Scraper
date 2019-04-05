@@ -1,7 +1,6 @@
 
 <nav class="navbar navbar-expand">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -12,26 +11,24 @@
       <a class="navbar-brand" href="#">News Scraper</a>
     </div>
 
-    <!-- Collect the nav links for toggling -->
+    <!-- Toggling Nav Links -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="/" id="home">Home</a></li>
         <li><a href="/saved" id="saved">Saved Articles</a></li>
-        {{!-- <li><button type="button" class="btn btn-danger btn-scrape">Refresh NPR Articles</button></li> --}}
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
     <div class="jumbotron npr-bg">
       <div class="container">
         <h1 class="text-center" id="scraping"></h1>
         <button type="button" class="btn btn-danger btn-scrape">Refresh NPR Articles</button>
-        {{!-- <h3 class="text-center">from NPR</h3> --}}
       </div>
     </div>
 
-    <!-- Main new/unsaved articles container-->
+    <!-- New and unsaved articles will land here -->
     <div class="container article-container"> 
     </div>
 

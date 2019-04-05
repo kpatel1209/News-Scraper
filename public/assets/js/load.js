@@ -5,7 +5,7 @@ $(document).ready(function () {
   let speed = 65;
   typeWriter();
 
-  // Typewriter effect for Welcome Statement when page loads
+  // Typewriter effect for "Scraping the News" when page loads
   function typeWriter() {    
     if (t < text.length) {
       document.getElementById("scraping").innerHTML += text.charAt(t);
