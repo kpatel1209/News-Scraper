@@ -1,11 +1,5 @@
-//controller - fetch headlines
 const db = require("../models");
 const scrape = require("../scripts/scrape");
-
-// 1. scrape articles
-// 2. then insert articles to db
-// 3. then check for new articles
-// 4. return no new OR count of new articles
 
 module.exports = {
   scrapeHeadlines: function(req,res) {
@@ -27,7 +21,7 @@ module.exports = {
       })
       .catch(function(err) {
         res.json({
-          message: `Article Scrape Complete.`
+          message: `Articles Have Been Scraped!`
         });
       });
   }

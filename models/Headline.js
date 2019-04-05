@@ -22,7 +22,6 @@ const headlineSchema = new Schema({
     type: String,
     required: true
   },
-  // headline set to unsaved initially
   saved: {
     type: Boolean,
     default: false
@@ -31,8 +30,7 @@ const headlineSchema = new Schema({
     type: Date,
     default: Date.now
   },
-   // `note` is an object that stores a Note id
-  // The ref property links the ObjectId to the Note model
+
   // This allows us to populate the Headline with an associated Note
   note: {
     type: Schema.Types.ObjectId,
@@ -40,7 +38,7 @@ const headlineSchema = new Schema({
   }
 });
 
-// This creates our model from the above schema, using mongoose's model method
+// This creates our model from the above schema using mongoose's model method
 const Headline = mongoose.model("Headline", headlineSchema);
 
 // Export the Headline model

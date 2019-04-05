@@ -3,7 +3,7 @@ const cheerio = require("cheerio");
 
 const scrape = function() {
 
-  // NPR is the site we will be scraping
+  // NPR is the site we will be scraping from
   return axios.get("https://www.npr.org/sections/news/")
     .then(res => {
       const $ = cheerio.load(res.data);
@@ -19,7 +19,7 @@ const scrape = function() {
       let summary = $(element).find(".teaser").find("a").text().trim();
       let imgUrl = $(element).find("a").find("img").attr("src");
 
-      // If this found element contains all data I need
+      // If this found element contains all the data I need
       if (title && url && summary && imgUrl) {
 
         //Remove extra lines/spaces
