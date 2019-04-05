@@ -1,11 +1,11 @@
 const router = require("express").Router();
 
-// route renders home page
+// Route renders the home handlebars page
 router.get("/", function(req,res) {
   res.render("home");
 });
 
-//route render handlebars 'saved articles' page
+// Route renders the saved handlebars page
 router.get("/saved", function(req,res) {
   res.render("saved");
 });
