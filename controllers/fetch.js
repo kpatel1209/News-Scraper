@@ -21,7 +21,7 @@ module.exports = {
       })
       .catch(function(err) {
         res.json({
-          message: `Articles Have Been Scraped!`
+          message: `Articles Have Been Refreshed!`
         });
       });
   }

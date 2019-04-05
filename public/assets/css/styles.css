@@ -1,15 +1,13 @@
 
 * {
-  font-family: "Poppins","Helvetica Neue",Helvetica,Arial,sans-serif;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 }
 
 .jumbotron {
   margin-bottom: 30px;
-  /* background-image: url(../images/newspaper.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
-  /* text-shadow: rgb(253, 252, 252) 0.3em 0.3em 0.3em; */
 }
 
 .jumbotron h1 {
@@ -20,6 +18,17 @@
 h3 {
   font-weight: bold;
   color: black;
+}
+
+.nav>li>a:hover {
+  text-decoration: none;
+  /* color: white; */
+  background: black;
+}
+
+#saved:hover,
+#home:hover {
+  color:white;
 }
 
 .panel-default>.panel-heading {
@@ -95,7 +104,6 @@ button.btn-save {
 
 /* =======MEDIA QUERIES====== */
 
-/* tweak font size/spacing for devices */
 @media (max-width: 1200px) {
  button.notes, button.delete, button.btn-save {
     margin-top: 10px;

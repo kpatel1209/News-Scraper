@@ -3,7 +3,7 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const mongoose = require("mongoose");
 const logger = require("morgan");
-const db = require("./models");
+// const db = require("./models");
 
 // Set PORT to be either the host's designated port or 8080
 const PORT = process.env.PORT || 8080;

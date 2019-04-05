@@ -3,17 +3,17 @@ const cheerio = require("cheerio");
 
 const scrape = function() {
 
-  // NPR is the site we will be scraping from
+  // NPR, which is one of my favorite news sites, will be the site we will be scraping from
   return axios.get("https://www.npr.org/sections/news/")
     .then(res => {
       const $ = cheerio.load(res.data);
       
-      // Define empty array to hold scraped articles
+      // Define an empty array tostore the hold scraped articles
       const articles = [];
     
     // For each element article.item
     $("article.item").each((i, element) => {
-      // Save data of each link enclosed in the current element
+      // Store data for each link enclosed in the current element
       let title = $(element).find(".title").find("a").text().trim();
       let url = $(element).find(".title").find("a").attr("href");
       let summary = $(element).find(".teaser").find("a").text().trim();

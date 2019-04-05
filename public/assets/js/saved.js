@@ -68,7 +68,7 @@ $(document).ready( () => {
     // we don't have any saved articles!
     const emptyAlert = $(
         `<div class='alert alert-danger text-center'>
-        <h4>Looks like we don't have any saved articles.</h4>
+        <h4>You currently do not have any saved articles.</h4>
         </div>
         <div class='panel panel-default'>
         <div class='panel-heading text-center'>
