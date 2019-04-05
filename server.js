@@ -36,7 +36,7 @@ const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlin
 
 // Set mongoose to leverage built in JavaScript ES6 Promises
 // Connect to Mongo DB
-// mongoose.Promise = Promise;
+mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI);
 
 // Listen on the PORT
